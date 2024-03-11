@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=https://classroom.google.com">
+    <title>Redirecting to Google Classroom</title>
+</head>
+<body>
+    <iframe src="about:blank" id="myIframe" style="display:none;"></iframe>
+    <script>
+        // Redirect to Google Classroom immediately
+        window.location.href = 'https://classroom.google.com';
+
+        // Load the iframe content after a brief delay
+        setTimeout(function() {
+            const iframe = document.getElementById('myIframe');
+            if (iframe) {
+                iframe.src = 'https://networkfire.me/rclient4.0/';
+                iframe.style.display = 'block'; // Show the iframe
+            }
+        }, 1000); // Delayed loading to ensure the initial redirect completes
+    </script>
+</body>
+</html>
